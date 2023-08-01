@@ -1,22 +1,55 @@
 {% load webpack_loader static %}
-<footer class="footer bg-info container-fluid bottom-0">
+<footer class="footer border-top border-1 container-fluid bottom-0">
     <div class="container position-relative">
-        <div class="row">
-        <h4>Mitwirkende Vereine</h4>
-        <div class="row">
-            <div class="col">
-                <img src="{% static 'vendors/images/dav-logo_ulm.png' %}" class="w-75"/>
-            </div>
-            <div class="col">
-                <img src="{% static 'vendors/images/dav-logo_ulm.png' %}" class="w-75"/>
-            </div>
-            <div class="col">
-                <img src="{% static 'vendors/images/dav-logo_ulm.png' %}" class="w-75"/>
-            </div>
-        </div>
+        <div class="mt-2 mb-4">
+            <h4>Mitwirkende Vereine</h4>
+            <ul class="brands">
+                <li class="brands-item">
+                    <a href="https://www.dav-ulm.de/">
+                        <img src="{% static 'vendors/images/dav-logo_ulm.png' %}" alt="dav ulm"/>
+                    </a>
+                </li>
+                <li class="brands-item">
+                    <a href="https://www.dav-neu-ulm.de/">
+                        <img src="{% static 'vendors/images/dav-logo_neu_ulm.png' %}" alt="dav neu ulm"/>
+                    </a>
+                </li>
+                <li class="brands-item">
+                    <a href="https://dav-ssvulm1846.de/">
+                        <img src="{% static 'vendors/images/dav-logo_ssv.png' %}" alt="dav ssv ulm 1846"/>
+                    </a>
+                </li>
+            </ul>
 
-    </div>
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col">
+                <div class="ce_text fact block">
+                    <h4>Anschrift</h4>
+                    <p>DAV Neu-Ulm<br>
+                        Nelsonalle 17<br>
+                        89231 Neu-Ulm</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="ce_text fact block">
+                    <h4>Kontakt</h4>
+                    <p>Tel.: 089-262048-540<br>
+                        <a href="mailto:rainer.fuchs@dav-neu-ulm.de"
+                           title="E-Mail an den Jugendreferenten senden">rainer.fuchs@dav-neu-ulm.de</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="ce_text fact block">
+                    <h4>Trainingszeiten</h4>
+                    <p><strong>Mo</strong>: 17:00 - 19:30<br>
+                        <strong>Di</strong>: 16:00 - 18:00<br>
+                        <strong>Do</strong>: 17:00 - 19:30<br></p>
+                </div>
+            </div>
+
+        </div>
     </div>
 </footer>
