@@ -1,0 +1,29 @@
+.brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+}
+
+ul.brands {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.brands-item img {
+  display: block;
+
+  /* Make sure max-width is added */
+  max-width: 100%;
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.brands-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
